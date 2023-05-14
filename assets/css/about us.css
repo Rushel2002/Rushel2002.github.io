@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #cart {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.5s;
+  }
+  
+  #cart:hover {
+    width: 40px;
+    height: 40px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #edf0f1;
+  }
+
+  .navbar {
+    background-color: rgb(125, 23, 148);
+    }
+
+  .logo{
+    cursor: pointer;
+    width: 9rem;
+    margin-left: 4rem;
+    align-self: center;
+  }
+
+  /* -------------menu/navbar css------------- */
+  .nav-link, .nav-item{
+    padding-top: 10px;
+    font-family: Helvetica;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+  .nav-item-home{
+    background-color: transparent;
+    padding-top: 10px;
+    font-family: Helvetica;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .nav-link {
+      margin-right: 1em !important;
+  }
+  a.nav-link:hover {
+    color: purple;
+  }
+
+  .navbar-collapse {
+      justify-content: flex-end;
+  } 
+  .navbar-nav {
+    margin-right: 30px;
+  }
+  .navbar-nav a {
+    color: rgba(245, 254, 255, 0.979);
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .navbar-toggler {   /* menu collapse when in small screen*/
+    font-size: 10px;
+    line-height: 0.3;
+    background: rgb(138, 73, 73);
+  }
+  .active_nav {
+    background-color: rgb(125, 23, 148);
+    transition: 0.6s;
+    height: 38px;
+  }
+  .active_nav .logo {
+    width: 6rem;
+    transition: 0.6s;
+  }
+  .active_nav .nav_item {
+    font-size: 12px;
+    transition: 0.6s;
+  }
+  .active_nav .navbar_nav a {
+    font-size: 12px;
+    transition: 0.6s;
+  }
+  .active_nav .nav-link {
+    font-size: 12px;
+    transition: 0.6s;
+  }
+  .active_nav span .material-icons {
+    size: 12px;
+    transition: 0.6s;
+  }
+
+.col-3 p{
+    font-size: 12px; 
+    margin: 12px 0; 
+    color: #777;
+  }
+
+  /* -------------testimonial--------------- */
+.testimonial {
+  padding-top: 70px;
+}
+
+.text {
+  margin-top: 1px;
+ margin-bottom: 1px;
+}
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+  transform: translateY(-10px);
+}
+
+.fas.fa-quote-left {
+  font-size: 20px;
+  color: #ff523b;
+}
+
+.testimonial .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+.small-container {
+  max-width: 1180px;
+  margin: 30px auto;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+}
+.small-container h4 {
+  font-size: 13px;
+}
+
+  /* ----------footer---------- */
+.page-footer {
+    background-color: rgb(5, 5, 5);  
+    color: white;  
+    padding: 40px 0 30px; 
+  }
+  .footer-copyright {
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+  margin: 12px;
+  }
+  .page-footer .container {
+    padding: 1rem 0;
+  }
+  
+  .page-footer .container a{
+    line-height: 3rem;
+    font-size: 20px;
+    color:#fff;
+    margin: 12px;
+  border-radius: 80%;
+  }
+  .page-footer .container a:hover {
+  background-color: purple;
+  }
+  .page-footer p {
+  font-family: Helvetica;
+  font-size: 10px;
+  }
+  
+  /* -------------media query for menu------------- */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 10px 50px 10px 0px;
+    }
+  
+    nav ul li a {
+      color: #fff;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  /* --------media query for less than 600 screen size */
+  
+  @media only screen and (max-width: 600px) {
+    .row {
+      text-align: center;
+    }
+  
+    .col-2,
+    .col-3,
+    .col-4 {
+      flex-basis: 100%;
+    }
+  }
+
+  /* Media Query */
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .contact form .inputBox .input .map {
+      width: 100% !important;
+    }
+  }

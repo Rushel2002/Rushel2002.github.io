@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Hanson;
+    src: url(Hanson-bold.otf);
+}
+
+body {
+	background: #ffffff;
+}
+.navbar{
+	background-color: rgb(125, 23, 148);
+}
+.nav-item-home{
+    background-color: transparent;
+    padding-top: 10px;
+    font-family: Helvetica;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+.logo{
+	cursor: pointer;
+	width: 9rem;
+	margin-left: 4rem;
+	align-self: center;
+}
+/* menu/navbar styles here*/
+.nav-link,
+
+.nav-item{
+    color: rgba(245, 254, 255, 0.979);
+	padding-top: 10px;
+	font-family: Helvetica;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: purple;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+} 
+.navbar-nav {
+	margin-right: 30px;
+}
+.navbar-nav a {
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.navbar-toggler {   /* menu collapse when in small screen*/
+	font-size: 10px;
+	line-height: 0.3;
+	background: rgb(138, 73, 73);
+}
+.active_nav {
+	background-color: rgb(125, 23, 148);
+	transition: 0.6s;
+	height: 38px;
+}
+.active_nav .logo {
+	width: 6rem;
+	transition: 0.6s;
+}
+.active_nav .nav_item {
+	font-size: 12px;
+	transition: 0.6s;
+}
+.active_nav .navbar_nav a {
+	font-size: 12px;
+	transition: 0.6s;
+}
+.active_nav .nav-link {
+	font-size: 12px;
+	transition: 0.6s;
+}
+.active_nav span .material-icons {
+	size: 12px;
+	transition: 0.6s;
+}
+
+/* nav bar css end here*/
